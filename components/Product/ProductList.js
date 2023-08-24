@@ -42,7 +42,7 @@ const ProductList = ({ products }) => {
           )}
         </div>
       </div>
-      {/* <div className="p-5 flex justify-center items-center">
+      <div className="p-5 flex justify-center items-center">
         <Link
           className="py-2 px-3 bg-red-500 rounded-lg hover:bg-red-700 text-white"
           href="/products/new"
@@ -89,7 +89,7 @@ const ProductList = ({ products }) => {
             )}
           </tbody>
         </table>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -22,11 +22,6 @@ const Navbar = () => {
                 Products
               </span>
             </Link>
-            <Link href="/cart">
-              <span className="text-white hover:text-blue-300 transition duration-300">
-                Cart
-              </span>
-            </Link>
             <Link href="/login">
               <span className="text-white hover:text-blue-300 transition duration-300">
                 Login
