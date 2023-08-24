@@ -13,8 +13,8 @@ const Register = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
-      <form className="bg-white p-8 shadow-md rounded-md">
-        <h2 className="text-2xl font-semibold mb-4">Register</h2>
+      <form className="bg-white p-8 shadow-md rounded-md w-96">
+        <h2 className=" text-3xl font-semibold mb-4 text-blue-500">Register</h2>
         <input
           type="text"
           placeholder="Phone Number"
@@ -36,6 +36,12 @@ const Register = () => {
         >
           Register
         </button>
+        <p className="mt-2 text-sm text-gray-600">
+          Have an account? Please Login {" "}
+          <a href="/login" className="text-blue-500 hover:underline">
+            Login
+          </a>
+        </p>
       </form>
     </div>
   );

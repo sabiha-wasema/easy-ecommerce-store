@@ -48,14 +48,6 @@ const mockProducts = [
     price: 69.99,
     image:
       "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" // Add the image URL
-  },
-  {
-    id: 7,
-    title: "Smartphone Case",
-    description: "Protective case for your smartphone with a stylish design.",
-    price: 39.99,
-    image:
-      "https://images.unsplash.com/photo-1564466809058-bf4114d55352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" // Add the image URL
   }
 ];
 
