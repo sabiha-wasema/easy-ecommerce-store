@@ -22,6 +22,11 @@ const Navbar = () => {
                 Products
               </span>
             </Link>
+            <Link href="/admin/products">
+              <span className="text-white hover:text-blue-300 transition duration-300">
+                Admin
+              </span>
+            </Link>
             <Link href="/login">
               <span className="text-white hover:text-blue-300 transition duration-300">
                 Login

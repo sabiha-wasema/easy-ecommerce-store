@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LandingPage from "../../components/Home/LandingPage";
 import mockProducts from "../../components/data/mockProducts"; // Adjust the path accordingly
 
 const NewProduct = () => {
@@ -38,7 +37,7 @@ const NewProduct = () => {
     setImage(null); // Clear the selected image
   }
   return (
-    <LandingPage>
+    <div>
       <form className="p-5" action="" onSubmit={createProduct}>
         <h1 className="text-2xl pb-2 font-cursive font-extrabold mb-4 text-left mt-5">
           New Product
@@ -74,7 +73,7 @@ const NewProduct = () => {
           Save
         </button>
       </form>
-    </LandingPage>
+    </div>
   );
 };
 

@@ -1,15 +1,13 @@
-import ProductCard from "../../../components/ProductCard";
-import { products } from "../../../utils/data";
+import React from "react";
+import AdminDashboard from "../../../components/Admin/AdminDashboard";
+import mockProducts from "../../../components/data/mockProducts"; // Update the import path
 
-export default function AdminProductsPage() {
+const Admin = () => {
   return (
     <div>
-      <h1>Admin Product List</h1>
-      <div className="grid grid-cols-3 gap-4">
-        {products.map(product =>
-          <ProductCard key={product.id} product={product} />
-        )}
-      </div>
+      <AdminDashboard products={mockProducts} />
     </div>
   );
-}
+};
+
+export default Admin;
