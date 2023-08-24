@@ -1,19 +1,29 @@
+// pages/products/[id].js
+import React from "react";
 import { useRouter } from "next/router";
-import ProductDetail from "../../components/ProductDetail";
-import { products } from "../../utils/data";
+import ProductDetail from "../../components/Product/ProductDetail";
+import mockProducts from "../../components/data/mockProducts"; // Update the import path
 
-export default function ProductDetailPage() {
+const ProductDetailPage = () => {
   const router = useRouter();
-  const { productId } = router.query;
-  const product = products.find(p => p.id === productId);
+  const { id } = router.query;
+  const selectedProduct = mockProducts.find(
+    product => product.id === Number(id)
+  );
 
-  if (!product) {
+  if (!selectedProduct) {
     return <div>Product not found</div>;
   }
 
   return (
-    <div>
-      <ProductDetail product={product} />
+    <div className="flex h-screen bg-gray-200">
+      <div className="flex-1 bg-white overflow-hidden">
+        <main className="p-4">
+          <ProductDetail product={selectedProduct} />
+        </main>
+      </div>
     </div>
   );
-}
+};
+
+export default ProductDetailPage;

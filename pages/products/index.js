@@ -1,15 +1,16 @@
-import ProductCard from "../../components/ProductCard";
-import { products } from "../../utils/data";
+// pages/products.js
+import React from "react";
+import ProductList from "../../components/Product/ProductList";
+import mockProducts from "../../components/data/mockProducts"; // Update the import path
 
-export default function ProductsPage() {
+const ProductsPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4">Product List</h1>
-      <div className="grid grid-cols-3 gap-6">
-        {products.map(product =>
-          <ProductCard key={product.id} product={product} />
-        )}
-      </div>
+    <div>
+      <main>
+        <ProductList products={mockProducts} />
+      </main>
     </div>
   );
-}
+};
+
+export default ProductsPage;

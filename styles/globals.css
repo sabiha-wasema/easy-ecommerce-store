@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+input,
+textarea {
+  @apply border border-gray-200 rounded-md px-3 py-2 w-full;
+  @apply mb-4;
+}
+input:focus,
+textarea:focus {
+  @apply border-blue-900;
+}
+label {
+  @apply text-blue-900 font-semibold;
+}
+.btn-primary {
+  @apply bg-blue-900 text-white px-4 py-1 rounded-md;
+}
+table.basic {
+  @apply w-full;
+}
+table.basic thead tr td {
+  @apply bg-blue-100 py-2 px-4 font-semibold;
+}
+table.basic tr td {
+  @apply border border-blue-200 py-2 px-4;
+}
+table.basic a {
+  @apply bg-blue-900 text-white text-sm py-1 px-2 rounded-md inline-flex gap-1;
+}

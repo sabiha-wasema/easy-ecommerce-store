@@ -1,11 +1,13 @@
-import Header from "../components/Header";
-export default function Home() {
+// pages/index.js (Home/Landing view)
+import React from "react";
+import Home from "../components/Home/Home";
+
+const Landing = () => {
   return (
     <div>
-      <Header />
-      <main>
-        <h1>content</h1>
-      </main>
+      <Home />
     </div>
   );
-}
+};
+
+export default Landing;
